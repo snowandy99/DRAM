@@ -1,0 +1,42 @@
+::-webkit-scrollbar {width: 4px; height: 4px;}
+::-webkit-scrollbar-thumb {background-color: #485563;}
+body {
+  margin: 0px; height: 100vh; width: 100vw;
+  background-image: linear-gradient(225deg, #485563, #29323c 60%);
+  font-family: 'Chakra Petch', sans-serif;
+  text-rendering: optimizeLegibility;
+  background-repeat: no-repeat;
+  background-color: #333;
+  display: flex; flex-direction: column;
+  justify-content: space-around;
+}
+#phn {position: fixed; top: 0px; width: 100%; height: 100%; background-color: #333; color: #ddd; text-align: center; display: none; z-index: 99;}
+#phn > p {margin-top: 50vh;}
+a {text-decoration: none;}
+body > h1 {text-align: center; color: #fff; margin-top: 1em; margin-bottom: 0px;}
+h2, h6 {margin: 0px; text-align: center;}
+main {
+  width: 80%; height: 80%;
+  color: #000; background-color: rgba(255, 255, 255, 0.05);
+  margin: auto; border-radius: 0em 10em; box-shadow: 0px 0px 20px rgba(100, 100, 100, 0.3);
+  display: flex; flex-direction: column;
+  justify-content: space-around;
+}
+.row {
+  width: 80%; margin: auto;
+  display: flex; flex-direction: row; flex-wrap: nowrap;
+  justify-content: space-around; align-items: center;
+}
+.team {
+  background-color: #fff;
+  width: 16%; min-width: 240px; min-height: 50%;
+  border-radius: 0.7em;
+  box-shadow: 0px 0px 20px rgba(100, 100, 100, 0.2);
+}
+.memberImg {width: 60%; height: auto; border-radius: 50%; display: block; margin: 1em auto; border: solid 5px #eee;}
+.extLinkImg {width: 10%; height: auto; display: block; margin: 5% auto; opacity: 0.1; transition: 0.3s ease;}
+.extLinkImg:hover {opacity: 0.3;}
+
+@media (max-width: 1024px) {
+  #phn {display: block;}
+}
